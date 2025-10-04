@@ -1,38 +1,28 @@
-import { useState } from 'react'
 import './App.css'
-import { Children } from 'react';
-import Footer from './components/Footer/Footer.tsx';
-import Home from './components/Home/Home.tsx';
-import Layout from './components/Layout/Layout.tsx';
-import Navbar from './components/Navbar/Navbar.tsx';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import About from './components/About/About';
-import Portfolio from './components/portfolio/Portfolio.tsx';
-import Contact from './components/contact/Contact.tsx';
-import Notfound from './components/notfound/Notfound.tsx';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Layout from './components/Layout/Layout'
+import Home from './components/Home/Home'
+import About from './components/About/About'
+import Portfolio from './components/portfolio/Portfolio'
+import Contact from './components/contact/Contact'
+import Notfound from './components/notfound/Notfound'
 
-
-let routers = createBrowserRouter([
+const routers = createBrowserRouter([
   {
-    path: '/', element: <Layout />, children: [
+    path: '/',
+    element: <Layout />,
+    children: [
       { index: true, element: <Home /> },
-      {path: 'about', element: <About />},
-      {path: 'portfolio', element: <Portfolio />},
-      {path: 'contact', element: <Contact />},
-      {path: '*', element: <Notfound />},
-    ]
-  }
+      { path: 'about', element: <About /> },
+      { path: 'portfolio', element: <Portfolio /> },
+      { path: 'contact', element: <Contact /> },
+      { path: '*', element: <Notfound /> },
+    ],
+  },
 ])
 
 function App() {
-
-  return (
-    <>
-      <RouterProvider router={routers}>
-
-      </RouterProvider>
-    </>
-  )
+  return <RouterProvider router={routers} />
 }
 
 export default App
