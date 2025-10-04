@@ -1,0 +1,9 @@
+i.footer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 45px;
+   height: 45px;
+   border: 1px solid #fff !important;
+   border-radius: 50%;
+}

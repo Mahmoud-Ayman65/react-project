@@ -1,0 +1,50 @@
+:root {
+   --first-color: #2C3E50;
+   --second-color: #1ABC9C;
+   --third-color: #1A252F;
+}
+
+.bg-first {
+   background-color: var(--first-color) !important;
+}
+
+.color-first {
+   color: var(--first-color) !important;
+}
+
+.bg-second {
+   background-color: var(--second-color) !important;
+}
+
+.color-second {
+   color: var(--second-color) !important;
+}
+
+.bg-third {
+   background-color: var(--third-color) !important;
+}
+
+.color-third {
+   color: var(--third-color) !important;
+}
+
+.start {
+   font-weight: 700 !important;
+   font-size: 40px !important;
+}
+
+.line {
+   width: 100px;
+   height: 4px;
+   background-color: #fff;
+}
+
+img {
+   width: 100%;
+   display: block;
+}
+
+.active {
+   transition: all 500ms ease-in-out;
+   background-color: var(--second-color);
+}

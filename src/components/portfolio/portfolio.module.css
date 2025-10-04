@@ -1,0 +1,8 @@
+.plus:hover .show {
+   opacity: 0.65 !important;
+}
+
+.show {
+   transition: all 500ms;
+
+}
